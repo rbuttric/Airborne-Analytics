@@ -22,6 +22,8 @@ This project is dedicated to predicting airline delays and forecasting airport d
 - Strategic Insights for Airlines: Airlines can use demand forecasting to optimize operations, enhance route planning, and improve overall efficiency.
 
 ## Dataset
-This project focuses on the analysis of domestic flight records of United Airlines for the year 2018.
+This project focuses on the analysis of Airline On-Time Performance Data from Jan 2018 - Dec 2019.
+https://www.transtats.bts.gov/databases.asp?Z1qr_VQ=E&Z1qr_Qr5p=N8vn6v10&f7owrp6_VQF=D
+
 
 Feel free to explore our project and leverage the power of data-driven insights for a smoother and more informed air travel experience!
