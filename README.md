@@ -7,6 +7,8 @@ Airline flight demand forecasting is a critical aspect of the aviation industry,
 
 This project is dedicated to predicting airline delays and forecasting airport demand, with a focus on providing valuable information for consumers booking future flights. Our model aims to empower passengers by offering relevant statistics and graphs related to their selected departure airport and date. Users can input their preferred departure date and airport, and the model will generate insights into historical and forecasted traffic patterns. This data can assist passengers in making informed decisions about arrival times, exploring alternative dates with lower demand, or anticipating potential delays due to high traffic volumes.
 
+In addition to forecasting airport demand, a crucial component of our project involves predicting flight delays, a common concern for air travelers. Understanding the factors contributing to delays and providing accurate predictions is essential for passengers planning their journeys. Our model analyzes historical flight data, considering variables such as weather conditions, air traffic, and other relevant factors, to provide insights into the likelihood of delays. By incorporating this predictive element, we aim to enhance the overall travel experience for users, allowing them to proactively plan and adjust their itineraries based on potential delays.
+
 ## Key Features
 - User-Friendly Interface: Our model provides a straightforward interface where users can input their desired departure date and airport to receive tailored insights.
 - Historical and Forecasted Data: Users gain access to both historical and forecasted traffic patterns, aiding in decision-making for future flights.
