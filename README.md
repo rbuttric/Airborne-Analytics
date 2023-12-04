@@ -27,8 +27,34 @@ In addition to forecasting airline flight demand, a crucial component of our pro
 - Strategic Insights for Airlines: Airlines can use demand forecasting to optimize operations, enhance route planning, and improve overall efficiency.
 
 ## Dataset
-This project focuses on the analysis of Airline On-Time Performance Data from Jan 2018 - Dec 2019.
+This project focuses on the analysis of US Airline On-Time Performance Data from Jan 2018 to Dec 2019, which contains approximately 14 million flight records across 363 airports and 18 airlines. 
 https://www.transtats.bts.gov/databases.asp?Z1qr_VQ=E&Z1qr_Qr5p=N8vn6v10&f7owrp6_VQF=D
 
+There is also a supplemental dataset that contains the dates of major US holidays from 2018 to 2024.  
+https://www.kaggle.com/datasets/donnetew/us-holiday-dates-2004-2021
+
+## Technical Requirements
+
+- Pandas (v1.5.3): Data manipulation and analysis library; provides data structures like dataframes for efficient data handling.
+- Numpy (1.24.3): Numerical computing library; supports large, multi-dimensional arrays and matrices, along with mathematical functions to operate on them.
+- Matplotlib (v3.6.0), seaborn (v0.12.2), plotly (v 5.9.0): Plotting libraries; used for creating static, animated, and interactive visualizations in Python.
+- Xgboost (v2.0.2): Gradient boosting library designed for speed and performance; used for supervised machine learning tasks, especially in predictive modeling and classification.
+- Statsmodels (v0.14.0): Statistical modeling library; provides classes and functions for estimating and testing statistical models.
+- Scipy (v1.10.1): Scientific computing library; builds on NumPy and provides additional functionality for optimization, signal processing, statistics, and more.
+- Pmdarima (2.0.4): AutoARIMA (AutoRegressive Integrated Moving Average) library; used for time series analysis and forecasting.
+- Scikit-learn (v1.2.2): Machine learning library; provides simple and efficient tools for data mining and data analysis, built on NumPy, SciPy, and matplotlib.
+- Sqlalchemy (v1.4.39): SQL toolkit and Object-Relational Mapping (ORM) library; used for communicating with relational databases and performing database operations.
+- Datetime: Module for working with dates and times; provides classes for manipulating dates and times in both simple and complex ways.
+
+## Files and order of execution
+### AWS Data Loads
+- AWS SQL Server DB Load.ipynb
+-- This file contains the code that looped through the on-time performace data stored locally, then inserted it into the AWS database in chunks of 10,000.
+### Demand Forecasting
+- Demand Forecasting - Analysis-Modeling.ipynb
+-- This file contains all code related to data cleaning, feature engineering, model selection and model evaluation. Authorization is needed to connect to the AWS database to pull all on-time performace data, so
+  included in the funtion get_airport_traffic_data there is an option to set sample_data=True, this will pull data from daily_ap_cnt_df.csv instead of querying the database.
+- Demand Forecasting - Dashboard.ipynb
+-- This file contains the best performing model found in Demand Forecasting - Analysis-Modeling.ipynb, user inputs for origin/destination airport and flight date, and outputs demand predictions and historic demand trends. This file also contains the function that allows the pulling of sample data. 
 
 Feel free to explore our project and leverage the power of data-driven insights for a smoother and more informed air travel experience!
