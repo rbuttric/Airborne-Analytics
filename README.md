@@ -51,6 +51,10 @@ https://www.kaggle.com/datasets/donnetew/us-holiday-dates-2004-2021
 - Scikit-learn (v1.2.2): Machine learning library; provides simple and efficient tools for data mining and data analysis, built on NumPy, SciPy, and matplotlib.
 - Sqlalchemy (v1.4.39): SQL toolkit and Object-Relational Mapping (ORM) library; used for communicating with relational databases and performing database operations.
 - Datetime: Module for working with dates and times; provides classes for manipulating dates and times in both simple and complex ways.
+- Python ODBC (v5.0.1): The pyodbc module allows connecting to data sources from Python on Windows, macOS, and Linux, for both 32-bit and 64-bit platforms.
+- Automated Feature Selection & Importance (v0.1.5): Automated Feature Selection &amp; Feature Importance Calculation Framework. Visit Snyk Advisor to see a full health score report for AutoFeatSelect, including popularity, security, maintenance & community analysis.
+- Lazy Predict (v0.2.12): Lazy Predict helps build a lot of basic models without much code and helps understand which models works better without any parameter tuning.
+- LightGBM (v4.1.0): LightGBM, short for light gradient-boosting machine, is a free and open-source distributed gradient-boosting framework for machine learning, originally developed by Microsoft.
 
 ## Files and order of execution
 ### AWS Data Loads
