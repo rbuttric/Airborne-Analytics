@@ -16,11 +16,17 @@ In addition to forecasting airline flight demand, a crucial component of our pro
 - Focused Analysis on United Airlines: The analysis centers on the domestic flight records of United Airlines for the year 2018.
 
 ## How It Works
+### Demand Forecasting
 - User Input: Users input their preferred departure date and airport.
 - Data Analysis: The model analyzes historical flight data, providing insights into past traffic patterns.
 - Forecasting: Using advanced forecasting techniques, the model predicts future demand and potential delays.
 - Visualizations: Relevant statistics and graphs are generated, offering users a clear understanding of the patterns and trends.
-
+### Delay Prediction
+- User Input: Users input flight information, including the month of departure, both departure and arrival airports, departure delay in minutes, aircraft taxi-in/out, wheels-off/on times, as well as the flight distance.
+- Data Analysis: The model conducts an in-depth analysis of historical flight data, capturing various factors influencing delays.
+- Supervised Machine Learning: Leveraging advanced supervised machine learning techniques, the model trains on historical data to identify patterns and relationships between different variables and predict potential delays in minutes.
+- Visualizations: The generated visualizations now include predictions for flight delays, providing users with a more accurate and actionable overview of potential disruptions.
+  
 ## Why It Matters
 - Informed Decision-Making: Passengers can make informed decisions about their travel plans based on historical and forecasted data.
 - Stress Reduction: Predicting departure delays provides passengers with peace of mind and the ability to proactively adjust their itineraries.
@@ -56,5 +62,14 @@ https://www.kaggle.com/datasets/donnetew/us-holiday-dates-2004-2021
   included in the funtion get_airport_traffic_data there is an option to set sample_data=True, this will pull data from daily_ap_cnt_df.csv instead of querying the database.
 2. Demand Forecasting - Dashboard.ipynb
    - This file contains the best performing model found in Demand Forecasting - Analysis-Modeling.ipynb, user inputs for origin/destination airport and flight date, and outputs demand predictions and historic demand trends. This file also contains the function that allows the pulling of sample data. 
+### Delay Prediction
+1. Query Data from AWS DB - AWS DB - Query Data.ipynb
+   - This file contains the code that queries and exports the dataset from the AWS database for machine learning purposes. It also includes the dataset used for model validation.
+2. ML Preparation - Machine Learning - Preparation.ipynb
+   - This file includes the code for Exploratory Data Analysis (EDA), target variable analysis, feature selection, and the selection of the machine learning model.
+3. ML Model 1 - Machine Learning - Random Forest.ipynb
+   - This file contains the code for data splitting, target value transformation, model training using Random Forest, hyperparameter tuning, model analysis, and model validation.
+4. ML Model 2 - Machine Learning - LGBM.ipynb
+   - This file contains the code for data splitting, target value transformation, model training using LightGBM, hyperparameter tuning, model analysis, and model validation.
 
 Feel free to explore our project and leverage the power of data-driven insights for a smoother and more informed air travel experience!
