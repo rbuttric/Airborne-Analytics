@@ -16,12 +16,12 @@ In addition to forecasting airline flight demand, a crucial component of our pro
 - Focused Analysis on United Airlines: The analysis centers on the domestic flight records of United Airlines for the year 2018.
 
 ## How It Works
-### Demand Forecasting
+#### Demand Forecasting
 - User Input: Users input their preferred departure date and airport.
 - Data Analysis: The model analyzes historical flight data, providing insights into past traffic patterns.
 - Forecasting: Using advanced forecasting techniques, the model predicts future demand and potential delays.
 - Visualizations: Relevant statistics and graphs are generated, offering users a clear understanding of the patterns and trends.
-### Delay Prediction
+#### Delay Prediction
 - User Input: Users input flight information, including the month of departure, both departure and arrival airports, departure delay in minutes, aircraft taxi-in/out, wheels-off/on times, as well as the flight distance.
 - Data Analysis: The model conducts an in-depth analysis of historical flight data, capturing various factors influencing delays.
 - Supervised Machine Learning: Leveraging advanced supervised machine learning techniques, the model trains on historical data to identify patterns and relationships between different variables and predict potential delays in minutes.
