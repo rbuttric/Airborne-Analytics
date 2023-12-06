@@ -59,11 +59,12 @@ https://www.kaggle.com/datasets/donnetew/us-holiday-dates-2004-2021
 ## Files and order of execution
 ### AWS Data Loads
 1. AWS SQL Server DB Load.ipynb
-   - This file contains the code that looped through the on-time performace data stored locally, then inserted it into the AWS database in chunks of 10,000.
+   - This file contains the code that looped through the on-time performace data stored locally, then inserted it into the AWS database in chunks of 10,000. An example of the on-time performace data
+     can be seen in file SAMPLE_On_Time_Reporting_Carrier_On_Time_Performance_(1987_present)_2018_1.csv
 ### Demand Forecasting
 1. Demand Forecasting - Analysis-Modeling.ipynb
    - This file contains all code related to data cleaning, feature engineering, model selection and model evaluation. Authorization is needed to connect to the AWS database to pull all on-time performace data, so
-  included in the funtion get_airport_traffic_data there is an option to set sample_data=True, this will pull data from daily_ap_cnt_df.csv instead of querying the database.
+  included in the funtion get_airport_traffic_data there is an option to set sample_data=True, this will pull data from daily_ap_cnt_df.csv and holidays_df.csv instead of querying the database.
 2. Demand Forecasting - Dashboard.ipynb
    - This file contains the best performing model found in Demand Forecasting - Analysis-Modeling.ipynb, user inputs for origin/destination airport and flight date, and outputs demand predictions and historic demand trends. This file also contains the function that allows the pulling of sample data. 
 ### Delay Prediction
