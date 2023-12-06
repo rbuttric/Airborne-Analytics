@@ -17,9 +17,9 @@ In addition to forecasting airline flight demand, a crucial component of our pro
 
 ## How It Works
 #### Demand Forecasting
-- User Input: Users input their preferred departure date and airport.
+- User Input: Users input their preferred departure date, origin airport, and destination airport.
 - Data Analysis: The model analyzes historical flight data, providing insights into past traffic patterns.
-- Forecasting: Using advanced forecasting techniques, the model predicts future demand and potential delays.
+- Forecasting: Using advanced forecasting techniques, the model predicts future demand on the preferred departure date +/- 7 days.
 - Visualizations: Relevant statistics and graphs are generated, offering users a clear understanding of the patterns and trends.
 #### Delay Prediction
 - User Input: Users input flight information, including the month of departure, both departure and arrival airports, departure delay in minutes, aircraft taxi-in/out, wheels-off/on times, as well as the flight distance.
