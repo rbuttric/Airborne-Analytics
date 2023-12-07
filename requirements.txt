@@ -10,7 +10,14 @@ pmdarima == 2.0.4
 scikit-learn == 1.2.2
 sqlalchemy == 1.4.39
 datetime == no version
-pyodbc == 5.0.1
+pyodbc == 5.0.1 (Alt. SSMS)
 autofeatselect == 0.1.5
 lazypredict == 0.2.12
 lightgbm == 4.1.0
+
+ODBC Data Source Adminstrator (32-bit):- 
+- User DSN
+- ODBC Driver 17 for SQL Server
+
+Microsoft SQL Server Management Studio v19.1
+- An alternative approach to connect the AWS SQL Server
