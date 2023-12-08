@@ -55,6 +55,8 @@ https://www.kaggle.com/datasets/donnetew/us-holiday-dates-2004-2021
 - Automated Feature Selection & Importance (v0.1.5): Automated Feature Selection &amp; Feature Importance Calculation Framework. Visit Snyk Advisor to see a full health score report for AutoFeatSelect, including popularity, security, maintenance & community analysis.
 - Lazy Predict (v0.2.12): Lazy Predict helps build a lot of basic models without much code and helps understand which models works better without any parameter tuning.
 - LightGBM (v4.1.0): LightGBM, short for light gradient-boosting machine, is a free and open-source distributed gradient-boosting framework for machine learning, originally developed by Microsoft.
+- ODBC Data Source Adminstrator (32-bit): It is a component in the Microsoft Windows operating system that allows you to create and manage ODBC data sources.
+- Microsoft SQL Server Management Studio v19.1 - It offers an alternative approach to connecting to AWS SQL Server and querying data from our AWS tables.
 
 ## Files and order of execution
 ### AWS Data Loads
