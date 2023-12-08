@@ -446,9 +446,14 @@ def predict(n_clicks, origin, destination, wheels_off_time, wheels_on_time, dep_
     pred = lgbm_model.predict(df, num_iteration=lgbm_model.best_iteration)
 
     # 5. Inverse the prediction result
-    inversed_pred = round(inv_model.inverse_transform(pred.reshape(-1, 1))[0][0] * -1,2)
+    inversed_pred = round(inv_model.inverse_transform(pred.reshape(-1, 1))[0][0],2)
 
-    return f'Predicted Delay: {inversed_pred} minute delay'
+    if 0 <= inversed_pred < 15:
+        return f"Your flight is likely on schedule, as the predicted delay is less than 15 minutes ({inversed_pred} minutes)."
+    elif inversed_pred >= 15:
+        return f"Your flight is likely to be delayed, as the predicted delay is more than 15 minutes ({inversed_pred} minutes)."
+    else:
+        return f"Your flight is likely ahead of schedule, with a predicted delay of less than 0 minutes ({inversed_pred} minutes)."
 
 # Define callback to update graphs based on user input
 @app.callback(
