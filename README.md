@@ -78,5 +78,8 @@ https://www.kaggle.com/datasets/donnetew/us-holiday-dates-2004-2021
    - This file contains the code for data splitting, target value transformation, model training using Random Forest, hyperparameter tuning, model analysis, and model validation.
 4. ML Model 2 - Machine Learning - LGBM.ipynb
    - This file contains the code for data splitting, target value transformation, model training using LightGBM, hyperparameter tuning, model analysis, and model validation.
-
+5. Trained Model 1 - clf_model
+   - This file serves as the container for a LightGBM model, which the dashboard will utilize to predict flight delays.
+6. Trained Model 2 - pt_model
+   - This file encapsulates a PowerTransformer model instantiated with the 'yeo-johnson' method and standardization turned off. The model is intended to be applied by the dashboard to inverse the predictions, allowing for the transformation of predicted values back to their original scale or distribution.
 Feel free to explore our project and leverage the power of data-driven insights for a smoother and more informed air travel experience!
