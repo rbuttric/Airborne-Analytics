@@ -77,7 +77,7 @@ https://www.kaggle.com/datasets/donnetew/us-holiday-dates-2004-2021
 3. ML Model 1 - Machine Learning - Random Forest.ipynb
    - This file contains the code for data splitting, target value transformation, model training using Random Forest, hyperparameter tuning, model analysis, and model validation.
 4. ML Model 2 - Machine Learning - LGBM.ipynb
-   - This file contains the code for data splitting, target value transformation, model training using LightGBM, hyperparameter tuning, model analysis, and model validation.
+   - This file contains the code for data splitting, target value transformation, LightGBM model training, hyperparameter tuning, model analysis, and model validation. The model is employed in our dashboard with new inputs.
 5. Trained Model 1 - clf_model
    - This file serves as the container for a LightGBM model, which the dashboard will utilize to predict flight delays.
 6. Trained Model 2 - pt_model
