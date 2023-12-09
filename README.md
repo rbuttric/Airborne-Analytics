@@ -26,6 +26,9 @@ In addition to forecasting airline flight demand, a crucial component of our pro
 - Data Analysis: The model conducts an in-depth analysis of historical flight data, capturing various factors influencing delays.
 - Supervised Machine Learning: Leveraging advanced supervised machine learning techniques, the model trains on historical data to identify patterns and relationships between different variables and predict potential delays in minutes.
 - Visualizations: The generated visualizations now include predictions for flight delays, providing users with a more accurate and actionable overview of potential disruptions.
+#### Dashboard
+- Interactivity: the dashboard provides a medium for users to make the aforementioned inputs. The inputs change the visualizations accordingly.
+- Visualizations: In addition to the above graphs displaying statistics relating to demand forecasting, a map of the US with airports serviced by United Airlines is displayed.
   
 ## Why It Matters
 - Informed Decision-Making: Passengers can make informed decisions about their travel plans based on historical and forecasted data.
@@ -85,7 +88,7 @@ https://www.kaggle.com/datasets/donnetew/us-holiday-dates-2004-2021
 6. Trained Model 2 - pt_model
    - This file encapsulates a PowerTransformer model instantiated with the 'yeo-johnson' method and standardization turned off. The model is intended to be applied by the dashboard to inverse the predictions, allowing for the transformation of predicted values back to their original scale or distribution.
 ### Dashboard
-1. Dashboard script - Dashboard.py
-   - This file contains the code for the layout, callback statements, and execution for the dashboard app. It defines the map used to highlight the route indicated by the user. Lastly, it reads in the above models to be used in updating values presented in the dashboard.
+1. Dashboard.py
+   - This file contains the code for the layout, callback statements, and execution for the dashboard app. It also defines the map used to highlight the route indicated by the user. Lastly, it reads in or utilizes the code in the clf_model, pt_model, and Demand Forecasting - Dashboard.ipynb files to produce flight delay predictions and customize the data on the chart.
 
 Feel free to explore our project and leverage the power of data-driven insights for a smoother and more informed air travel experience!
