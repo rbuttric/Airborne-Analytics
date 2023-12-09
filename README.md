@@ -57,6 +57,8 @@ https://www.kaggle.com/datasets/donnetew/us-holiday-dates-2004-2021
 - LightGBM (v4.1.0): LightGBM, short for light gradient-boosting machine, is a free and open-source distributed gradient-boosting framework for machine learning, originally developed by Microsoft.
 - ODBC Data Source Adminstrator (32-bit): It is a component in the Microsoft Windows operating system that allows you to create and manage ODBC data sources.
 - Microsoft SQL Server Management Studio v19.1 - It offers an alternative approach to connecting to AWS SQL Server and querying data from our AWS tables.
+- Dash (v2.7.0): Dash is the most downloaded, trusted Python framework for building ML & data science web apps.
+- Plotly (v5.9.0): The interactive graphing library for Python
 
 ## Files and order of execution
 ### AWS Data Loads
@@ -82,5 +84,8 @@ https://www.kaggle.com/datasets/donnetew/us-holiday-dates-2004-2021
    - This file serves as the container for a LightGBM model, which the dashboard will utilize to predict flight delays.
 6. Trained Model 2 - pt_model
    - This file encapsulates a PowerTransformer model instantiated with the 'yeo-johnson' method and standardization turned off. The model is intended to be applied by the dashboard to inverse the predictions, allowing for the transformation of predicted values back to their original scale or distribution.
+### Dashboard
+1. Dashboard script - Dashboard.py
+   - This file contains the code for the layout, callback statements, and execution for the dashboard app. It defines the map used to highlight the route indicated by the user. Lastly, it reads in the above models to be used in updating values presented in the dashboard.
 
 Feel free to explore our project and leverage the power of data-driven insights for a smoother and more informed air travel experience!
