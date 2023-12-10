@@ -14,6 +14,8 @@ pyodbc == 5.0.1 (Alt. SSMS)
 autofeatselect == 0.1.5
 lazypredict == 0.2.12
 lightgbm == 4.1.0
+Dash == 2.7.0
+Plotly == 5.9.0
 
 ODBC Data Source Adminstrator (32-bit):- 
 - User DSN
