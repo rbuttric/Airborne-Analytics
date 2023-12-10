@@ -326,37 +326,36 @@ app.layout = html.Div([
         html.H4('Enter desired values into the boxes below, then click predict to see an approximated delay for your flight.'),
 
         html.Label('Origin'),
-        dcc.Input(id='origin', type='text', value='DTW'),
+        dcc.Input(id='origin', type='text', value='LAX'),
 
         html.Label('Destination'),
-        dcc.Input(id='destination', type='text', value='DEN'),
-
-        html.Br(),
-        html.Label('WheelsOff_time'),
-        dcc.Input(id='wheels-off-time', type='number', value=900),
-
-        html.Label('WheelsOn_time'),
-        dcc.Input(id='wheels-on-time', type='number', value=1000),
-
-        html.Br(),
-        html.Label('DepDelay'),
-        dcc.Input(id='dep-delay', type='number', value=0),
-
-        html.Label('Month'),
-        dcc.Input(id='month', type='number', value=10),
-
-        html.Br(),
-        html.Label('TaxiOut'),
-        dcc.Input(id='taxi-out', type='number', value=10),
-
-        html.Label('TaxiIn'),
-        dcc.Input(id='taxi-in', type='number', value=5),
+        dcc.Input(id='destination', type='text', value='IAH'),
 
         html.Br(),
         html.Label('Distance'),
-        dcc.Input(id='distance', type='number', value=1200),
+        dcc.Input(id='distance', type='number', value=1379),
 
-        html.Button('Predict', id='predict-button', n_clicks=0),
+        html.Label('Month'),
+        dcc.Input(id='month', type='number', value=1),
+
+        html.Br(),
+        html.Label('Wheels On Time'),
+        dcc.Input(id='wheels-on-time', type='number', value=1100),
+
+        html.Label('Wheels Off Time'),
+        dcc.Input(id='wheels-off-time', type='number', value=900),
+
+        html.Br(),
+        html.Label('Taxi Out Time'),
+        dcc.Input(id='taxi-out', type='number', value=10),
+
+        html.Label('Taxi In Time'),
+        dcc.Input(id='taxi-in', type='number', value=5),
+
+        html.Br(),
+        html.Label('Previous Departure Delay'),
+        dcc.Input(id='dep-delay', type='number', value=0),
+
         html.Div(id='prediction-output', style={'color': 'red'}),
 
         html.Br(),
@@ -397,7 +396,6 @@ def update_map(origin, destination):
 @app.callback(
     Output('prediction-output', 'children'),
     [
-        Input('predict-button', 'n_clicks'),
         Input('origin', 'value'),
         Input('destination', 'value'),
         Input('wheels-off-time', 'value'),
@@ -409,8 +407,7 @@ def update_map(origin, destination):
         Input('distance', 'value'),
     ]
 )
-def predict(n_clicks, origin, destination, wheels_off_time, wheels_on_time, dep_delay, month, taxi_out, taxi_in,
-            distance):
+def predict(origin, destination, wheels_off_time, wheels_on_time, dep_delay, month, taxi_out, taxi_in, distance):
     # 1. concatenate origin and dest
     route = origin.upper() + '-' + destination.upper()
 
@@ -464,7 +461,6 @@ def predict(n_clicks, origin, destination, wheels_off_time, wheels_on_time, dep_
      Input('origin', 'value')]
 )
 def update_graphs(selected_date, selected_origin):
-    print('update_graphs')
     user_date_dt = pd.to_datetime(selected_date)
     user_month = user_date_dt.strftime('%B')
     user_day = user_date_dt.strftime('%A')
