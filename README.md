@@ -37,7 +37,7 @@ In addition to forecasting airline flight demand, a crucial component of our pro
 
 ## Dataset
 This project focuses on the analysis of US Airline On-Time Performance Data from Jan 2018 to Dec 2019, which contains approximately 14 million flight records across 363 airports and 18 airlines. 
-https://www.transtats.bts.gov/databases.asp?Z1qr_VQ=E&Z1qr_Qr5p=N8vn6v10&f7owrp6_VQF=D. This data set belongs to the Bureau of Transportation Statistics.
+https://www.transtats.bts.gov/databases.asp?Z1qr_VQ=E&Z1qr_Qr5p=N8vn6v10&f7owrp6_VQF=D. This dataset belongs to the Bureau of Transportation Statistics.
 
 There is also a supplemental dataset that contains the dates of major US holidays from 2018 to 2024.  
 https://www.kaggle.com/datasets/donnetew/us-holiday-dates-2004-2021
