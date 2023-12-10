@@ -37,10 +37,12 @@ In addition to forecasting airline flight demand, a crucial component of our pro
 
 ## Dataset
 This project focuses on the analysis of US Airline On-Time Performance Data from Jan 2018 to Dec 2019, which contains approximately 14 million flight records across 363 airports and 18 airlines. 
-https://www.transtats.bts.gov/databases.asp?Z1qr_VQ=E&Z1qr_Qr5p=N8vn6v10&f7owrp6_VQF=D
+https://www.transtats.bts.gov/databases.asp?Z1qr_VQ=E&Z1qr_Qr5p=N8vn6v10&f7owrp6_VQF=D. This data set belongs to the Bureau of Transportation Statistics.
 
 There is also a supplemental dataset that contains the dates of major US holidays from 2018 to 2024.  
 https://www.kaggle.com/datasets/donnetew/us-holiday-dates-2004-2021
+
+These datasets are publicly accessible.
 
 ## Technical Requirements
 
@@ -61,7 +63,6 @@ https://www.kaggle.com/datasets/donnetew/us-holiday-dates-2004-2021
 - ODBC Data Source Adminstrator (32-bit): It is a component in the Microsoft Windows operating system that allows you to create and manage ODBC data sources.
 - Microsoft SQL Server Management Studio (v19.1): It offers an alternative approach to connecting to AWS SQL Server and querying data from our AWS tables.
 - Dash (v2.7.0): Dash is the most downloaded, trusted Python framework for building ML & data science web apps.
-- Plotly (v5.9.0): The interactive graphing library for Python.
 
 ## Files and order of execution
 ### AWS Data Loads
